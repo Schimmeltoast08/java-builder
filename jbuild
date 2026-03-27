@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+javac "${1}.java" 
+echo Main-class: $1 > MANIFEST.MF
+jar -cvmf MANIFEST.MF "${1}.jar" "${1}.class"
+cat ~/.config/jbuild/stub.sh "${1}.jar" > "${1}.run" && chmod +x "${1}.run"
