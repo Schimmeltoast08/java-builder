@@ -11,7 +11,7 @@ cd java-builder
 # Usage
 To use jbuild, run 
 ```
-jbuild _filename_
+jbuild _ _filename_ _
 ```
 **WITHOUT** the .java file extension.
 For example helloworld.java --> jbuild helloworld
